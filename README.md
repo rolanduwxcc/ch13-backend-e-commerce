@@ -17,8 +17,8 @@
 * npm install
 * use ./assets/samples/__sample.env file to setup connection
 * mysql source db/schema.sql
-* npm start OR node server.js
-* npm seed OR node seeds/index.js
+* npm start
+* npm run seed
 ## Built with These Tools
 * JavaScript
 * [Node.js](https://nodejs.org/en/)
@@ -33,7 +33,7 @@
 W Rowland => find me on [GitHub](https://github.com/rolanduwxcc) or email me at rolanduwxcc@gmail.com
   
 ## Screenshots & Video How To
-[YouTube Walk Through](https://youtu.be/bMugmGb9_eY)<br>
+[YouTube Walk Through](https://youtu.be/gBYQdgK0Js4)<br>
 
 ## License & Copyrights
 Licensed under the [MIT License]('./LICENSE')
