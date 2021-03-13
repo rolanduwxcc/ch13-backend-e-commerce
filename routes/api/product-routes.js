@@ -10,13 +10,13 @@ router.get('/', (req, res) => {
   Product.findAll({
     include: [
       {
-        model: 'Category',
+        model: Category,
         attributes: [
           "category_name"
         ]
       },
       {
-        model: 'Tag',
+        model: Tag,
         attributes: [
           "tag_name"
         ]
@@ -67,6 +67,7 @@ router.post('/', (req, res) => {
   Product.create(req.body)
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
+      res.json(product);
       if (req.body.tagIds.length) {
         const productTagIdArr = req.body.tagIds.map((tag_id) => {
           return {
